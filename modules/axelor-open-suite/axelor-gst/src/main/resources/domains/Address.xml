@@ -6,9 +6,7 @@
 	<module name="base" package="com.axelor.apps.base.db" />
 
 	<entity name="Address" lang="java">
-		<string name="typeSelect" selection="address.type.selection"
-			title="Address Type" />
-		<many-to-one name="state" ref="com.axelor.apps.gst.db.State"
-			title="State"/>
+		<string name="typeSelect" selection="address.type.select" title="Address Type" />
+		<many-to-one name="state" ref="com.axelor.apps.gst.db.State" title="State" />
 	</entity>
 </domain-models>

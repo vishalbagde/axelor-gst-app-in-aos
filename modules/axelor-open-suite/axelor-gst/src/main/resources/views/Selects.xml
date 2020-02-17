@@ -14,4 +14,11 @@
 		<option value="others">others</option>
 	</selection>
 
+	<selection name="address.type.select">
+		<option value="default">default</option>
+		<option value="invoice">invoice</option>
+		<option value="shipping">shipping</option>
+		<option value="other">other</option>
+	</selection>
+
 </object-views>

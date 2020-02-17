@@ -14,8 +14,8 @@
 			</insert>
 		</extend>
 	</form>
-
-	<form name="partner-contact-form" id="partner-contact-form" title="Contact"
+	
+	<form name="partner-contact-form" id="gst-partner-contact-form" title="Contact"
 		model="com.axelor.apps.base.db.Partner" extension="true">
 
 		<extend target="//panel[@name='companyPanel']">

@@ -9,7 +9,7 @@
 		<!-- panel[@detailsPanel] -->
 
 		<extend target="//field[@name='address']">
-			<attribute name="colSpan" value="" />
+			<attribute name="colSpan" value="6" />
 			<insert position="after">
 				<field name="gstin"/>
 			</insert>
