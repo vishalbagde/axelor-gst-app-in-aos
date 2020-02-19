@@ -5,10 +5,17 @@
 
 	<form name="invoice-line-form" id="gst-invoice-line-form" title="Invoice line"
 		model="com.axelor.apps.account.db.InvoiceLine" extension="true">
-
+		
+	
+		<extend target="//field[@name='price']">
+			<insert position="after">
+					<field name="gstRate" colSpan="3"/>
+			</insert>
+		</extend>
+		
 		<extend target="//field[@name='companyInTaxTotal']">
 			<insert position="after">
-				<panel name="netGstTotalPanel" title="Gst Details" itemSpan="4">
+				<panel name="netGstTotalPanel" title="Gst Details" colSpan="12" itemSpan="4">
 					<field name="cgst"/>
 					<field name="sgst"/>
 					<field name="igst"/>
