@@ -56,7 +56,7 @@ public class InvoiceLineController {
     }
 
     response.setValue(
-        "analyticMoveLineList",
+        "analyticMoveLineList",	
         Beans.get(InvoiceLineService.class)
             .getAndComputeAnalyticDistribution(invoiceLine, invoice));
     response.setValue(
